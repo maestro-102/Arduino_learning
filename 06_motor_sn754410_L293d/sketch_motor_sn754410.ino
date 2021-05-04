@@ -37,7 +37,7 @@ void loop() {
 
 //Вращение вперед с заданной скоростью (диапазон 0-255)
 void forward(int rate) {
-  digitalWrite(EN, LOW);
+  digitalWrite(EN, HIGH);
   digitalWrite(MC1, HIGH);
   digitalWrite(MC2, LOW);
   analogWrite(EN, rate);
@@ -45,7 +45,7 @@ void forward(int rate) {
 
 //Вращение в обратном направлении с заданной скоростью (диапазон 0-255)
 void reverse (int rate) {
-  digitalWrite(EN, LOW);
+  digitalWrite(EN, HIGH);
   digitalWrite(MC1, LOW);
   digitalWrite(MC2, HIGH);
   analogWrite(EN, rate);
